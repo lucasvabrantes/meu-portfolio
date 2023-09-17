@@ -15,13 +15,21 @@ export const WelcomeContainer = () => {
         <WelcomeSection>
             <ContactsContainer>
                 <StyledLink>
-                    <img src={git} alt="link para o github" />
+                    <img src={git} id="git" alt="link para o github" />
                 </StyledLink>
                 <StyledLink>
-                    <img src={linkedin} alt="link para o linkedin" />
+                    <img
+                        src={linkedin}
+                        id="linkedin"
+                        alt="link para o linkedin"
+                    />
                 </StyledLink>
                 <StyledLink>
-                    <img src={telegram} alt="link para o telegram" />
+                    <img
+                        src={telegram}
+                        id="telegram"
+                        alt="link para o telegram"
+                    />
                 </StyledLink>
                 <div className="line"></div>
             </ContactsContainer>
@@ -29,7 +37,7 @@ export const WelcomeContainer = () => {
                 <div>
                     <StyledWelcomeText>
                         Oi, Me chamo&nbsp;<p>Lucas</p>
-                        <p>sou Desenvolvedor Web</p>
+                        <p>Sou Desenvolvedor Web</p>
                     </StyledWelcomeText>
 
                     <figure>
@@ -44,13 +52,13 @@ export const WelcomeContainer = () => {
                     </EmailContainer>
                 </div>
 
-                    <div className="brieflyContainer">
-                        <p>
-                            Eu sou um desenvolvedor Front End formado pela Kenzie
-                            Academy Brasil. Atualmente estudando backend com Node.js
-                        </p>
-                        <button className="contactMe">Contate me</button>
-                    </div>
+                <div className="brieflyContainer">
+                    <p>
+                        Eu sou um desenvolvedor Front End formado pela Kenzie
+                        Academy Brasil. Atualmente estudando backend com Node.js
+                    </p>
+                    <button className="contactMe">Contate me</button>
+                </div>
             </div>
         </WelcomeSection>
     );

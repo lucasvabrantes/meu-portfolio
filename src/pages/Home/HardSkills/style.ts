@@ -5,8 +5,7 @@ export const StyledSection = styled.section`
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    justify-content: space-between;
-    height: 350px;
+    height: 400px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -15,7 +14,7 @@ export const StyledSection = styled.section`
     border-top: none;
     border-bottom: none;
 
-    .aboutMeHeader {
+    .hardSkillsHeader {
         width: 100;
         display: flex;
         justify-content: flex-start;
@@ -24,9 +23,21 @@ export const StyledSection = styled.section`
         margin-left: 5rem;
     }
 
-    div:last-child {
+    ul {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-left: 5rem;
+
+        li {
+            display: flex;
+            transition: 0.4s;
+        }
+
+        li:hover {
+            filter: brightness(1.2);
+            transform: scale(1.2);
+        }
     }
 `;

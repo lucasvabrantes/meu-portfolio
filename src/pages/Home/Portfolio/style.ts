@@ -5,8 +5,7 @@ export const StyledSection = styled.section`
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    justify-content: space-between;
-    height: 350px;
+    height: 400px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -15,7 +14,7 @@ export const StyledSection = styled.section`
     border-top: none;
     border-bottom: none;
 
-    .aboutMeHeader {
+    .portfolioHeader {
         width: 100;
         display: flex;
         justify-content: flex-start;

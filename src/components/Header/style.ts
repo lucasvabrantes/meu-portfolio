@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    padding: 50px 13px 30px 0px;
-    margin-top: 3rem;
+    padding: 30px 13px 30px 0px;
+    margin-top: 1rem;
     border-radius: 100px 0px 0px 0px;
     width: 100%;
     display: flex;
     background: transparent;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     justify-content: center;
-    max-width: 970px;
+    max-width: 900px;
     border: 1.5px solid var(--grey-300);
     border-bottom: none;
 `;
@@ -29,13 +29,13 @@ export const StyledNav = styled.nav`
         height: 30px;
 
         span {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--cyan-500);
             font-family: var(--font-family);
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--grey-300);
             font-family: var(--font-family);
         }
