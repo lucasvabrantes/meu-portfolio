@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    height: 500px;
+    justify-content: space-between;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -20,6 +20,27 @@ export const StyledSection = styled.section`
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 5rem;
+        margin-left: 3rem;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: var(--cyan-500);
+        color: white;
+        border-radius: 5px;
+        width: 170px;
+        height: 40px;
+        margin: 0rem 3rem;
+        transition: 0.5s;
+        align-self: center;
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--orange-100);
+        }
     }
 `;

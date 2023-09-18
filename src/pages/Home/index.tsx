@@ -6,12 +6,13 @@ import { Footer } from "./Footer";
 import { Portfolio } from "./Portfolio";
 import { HardSkills } from "./HardSkills";
 import { useState } from "react";
+import { Contact } from "./Contact";
 
 export const Home = () => {
     const [colorChange, setColorChange] = useState<boolean>(false);
 
     const changeNavbarColor = () => {
-        if (window.scrollY >= 60) {
+        if (window.scrollY >= 70) {
             setColorChange(true);
         } else {
             setColorChange(false);
@@ -21,12 +22,13 @@ export const Home = () => {
 
     return (
         <StyledBody>
-            <div>
+            <div className="grid">
                 <Header colorChange={colorChange} />
                 <WelcomeContainer />
                 <AboutMe />
                 <HardSkills />
                 <Portfolio />
+                <Contact />
                 <Footer />
             </div>
         </StyledBody>

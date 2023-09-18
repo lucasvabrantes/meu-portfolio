@@ -9,15 +9,15 @@ export const StyledBody = styled.div`
     background-position: center;
     width: 100%;
     position: relative;
+    margin: 0 auto;
 
     div-first:child {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
-        flex-direction: column;
         width: 100%;
-        max-width: 900px;
     }
 
     .scrollHide {

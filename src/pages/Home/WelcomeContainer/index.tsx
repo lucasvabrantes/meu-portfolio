@@ -43,13 +43,13 @@ export const WelcomeContainer = () => {
                     <figure>
                         <img
                             src={Me}
-                            alt="Lucas Abrantes terminando o passeio no Museu do Amanhã(RJ). Ao fundo, pode-se ver um saxofonista tocando num lindo por sol."
+                            alt="Lucas Abrantes terminando o passeio no Museu do Amanhã(RJ). Ao fundo, pode-se ver um saxofonista tocando num lindo por do sol."
                         />
+                        <EmailContainer>
+                            <p>lucasabrts@icloud.com</p>
+                            <div className="line"></div>
+                        </EmailContainer>
                     </figure>
-                    <EmailContainer>
-                        <p>lucasabrts@icloud.com</p>
-                        <div className="line"></div>
-                    </EmailContainer>
                 </div>
 
                 <div className="brieflyContainer">

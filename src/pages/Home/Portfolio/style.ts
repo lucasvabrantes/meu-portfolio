@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Contact } from "../Contact/index";
 
 export const StyledSection = styled.section`
     display: flex;

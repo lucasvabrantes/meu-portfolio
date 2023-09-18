@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const WelcomeSection = styled.section`
     display: flex;
-    padding: 40px 30px 0px 50px;
-    height: 430px;
+    padding: 40px 50px 0px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -12,6 +11,10 @@ export const WelcomeSection = styled.section`
     border-top: none;
     border-bottom: none;
     margin-top: 99px;
+    position: relative;
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
 
     .welcomeTextAndPhoto {
         display: flex;
@@ -21,7 +24,14 @@ export const WelcomeSection = styled.section`
         div:first-child {
             display: flex;
             width: 100%;
-            max-height: 150px;
+            gap: 1rem;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
 
             figure {
                 margin: 0px;
@@ -32,12 +42,12 @@ export const WelcomeSection = styled.section`
                 border: 3px solid var(--cyan-500);
                 border-left: 0;
                 border-bottom: 0px;
-                width: 260px;
-                height: 260px;
+                width: 200px;
+                height: 230px;
                 padding: 1rem;
                 img {
-                    width: 230px;
-                    height: 230px;
+                    width: 200px;
+                    height: 200px;
                 }
             }
         }
@@ -49,12 +59,19 @@ export const WelcomeSection = styled.section`
         justify-content: space-evenly;
         height: 200px;
         gap: 1rem;
-        width: 400px;
+        width: 100%;
+        max-width: 40vw;
         padding-top: 2rem;
+        position: absolute;
+        top: 140px;
 
+        @media (max-width: 768px) {
+            top: 0px;
+            position: relative;
+        }
         p {
-            width: 420px;
-            margin: 0rem 3rem;
+            max-width: 420px;
+            margin: 0rem 1.5rem;
             font-size: 1rem;
             font-weight: 100;
         }
@@ -65,11 +82,11 @@ export const WelcomeSection = styled.section`
             border-radius: 3px;
             width: 100px;
             height: 40px;
-            margin: 0rem 3rem;
+            margin: 0rem 1.5rem;
             transition: 0.5s;
 
             &:hover {
-                filter: brightness(1.1);
+                background-color: var(--orange-100);
             }
         }
     }
@@ -79,12 +96,17 @@ export const ContactsContainer = styled.div`
     display: flex;
     gap: 1rem;
     padding-top: 1rem;
-    justify-content: flex-start;
-    align-content: flex-end;
     align-items: center;
     flex-direction: column;
     height: 400px;
-    width: 50px;
+
+    @media (max-width: 768px) {
+        height: 100px;
+        flex-direction: row;
+        padding-right: 23px;
+        padding-left: 35px;
+        justify-content: space-between;
+    }
 
     div {
         height: 85px;
@@ -101,17 +123,20 @@ export const EmailContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    width: 50px;
-    height: 312px;
+    width: 30px;
+    height: 200px;
 
     p {
         transform: rotate(270deg);
         color: var(--cyan-900);
         font-size: 1.3rem;
         letter-spacing: 0.9px;
-        margin: 108px 0px 0px 0px;
+        margin: 92px 0px 0px 30px;
         font-family: "Inconsolata", monospace;
         font-weight: 400;
+
+        @media (max-width: 768px) {
+        }
     }
 
     p:hover {
@@ -119,7 +144,7 @@ export const EmailContainer = styled.div`
     }
 
     .line {
-        height: 60px;
+        height: 20px;
         width: 2px;
         background-color: var(--cyan-500);
     }
@@ -162,7 +187,11 @@ export const StyledWelcomeText = styled.h1`
     font-family: var(--font-family);
     color: var(--grey-300);
     font-weight: 700;
-    margin: 1rem 0rem 0rem 3rem;
+    margin: 1rem 0rem 0rem 1.5rem;
+
+    @media (max-width: 867px) {
+        font-size: 1.8rem;
+    }
 
     p {
         font-size: 2.3rem;
@@ -170,5 +199,9 @@ export const StyledWelcomeText = styled.h1`
         font-weight: 700;
         color: var(--cyan-900);
         margin: 0;
+
+        @media (max-width: 867px) {
+            font-size: 1.8rem;
+        }
     }
 `;

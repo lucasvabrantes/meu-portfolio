@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    gap: 1rem;
     width: 100%;
     height: 150px;
     justify-content: center;
