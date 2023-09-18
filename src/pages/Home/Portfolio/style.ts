@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { Contact } from "../Contact/index";
 
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    height: 400px;
+    height: 1150px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -14,18 +15,75 @@ export const StyledSection = styled.section`
     border-top: none;
     border-bottom: none;
 
+    div > p {
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    }
+
     .portfolioHeader {
         width: 100;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 
-    div:last-child {
+    ul {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        margin-left: 3rem;
+
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 400px;
+            width: 350px;
+            height: 1px;
+            border: 1px solid var(--grey-300);
+            padding: 1rem;
+            border-radius: 10px;
+            transition: 0.5s;
+
+            &:hover {
+                box-shadow: 10px 10px 80px -18px rgba(0, 0, 0, 0.5);
+            }
+            .repoImg {
+                width: 100%;
+                height: 200;
+            }
+
+            .repoName {
+                font-size: 0.875rem;
+                font-weight: 700;
+                font-family: "Inconsolata", sans-serif;
+            }
+
+            .repoDescription {
+                font-family: "Inconsolata", sans-serif;
+            }
+            .footerItem {
+                display: flex;
+                justify-content: space-between;
+                .folder {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                a img {
+                    min-width: 25px;
+                    height: 25px;
+                }
+
+                a img:hover {
+                    filter: brightness(1.2);
+                }
+            }
+        }
     }
 `;

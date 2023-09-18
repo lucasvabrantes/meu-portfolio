@@ -21,7 +21,7 @@ export const StyledSection = styled.section`
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 
     div:last-child {

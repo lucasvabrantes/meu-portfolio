@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    height: 400px;
+    height: 500px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -14,31 +14,12 @@ export const StyledSection = styled.section`
     border-top: none;
     border-bottom: none;
 
-    .hardSkillsHeader {
+    .contactHeader {
         width: 100;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 3rem;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 3rem;
-        margin-left: 3rem;
-        justify-content: flex-start;
-
-        li {
-            display: flex;
-            transition: 0.4s;
-        }
-
-        li:hover {
-            filter: brightness(1.2);
-            transform: scale(1.2);
-        }
+        margin-left: 5rem;
     }
 `;

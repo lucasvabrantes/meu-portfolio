@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    padding: 30px 13px 30px 0px;
-    margin-top: 1rem;
-    border-radius: 100px 0px 0px 0px;
+    padding: 35px 0px;
     width: 100%;
     display: flex;
     background: transparent;
@@ -12,6 +10,10 @@ export const StyledHeader = styled.header`
     max-width: 900px;
     border: 1.5px solid var(--grey-300);
     border-bottom: none;
+    border-top: none;
+    position: fixed;
+    z-index: 99;
+    transition: 0.3s;
 `;
 
 export const StyledNav = styled.nav`

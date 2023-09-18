@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
+import { repositoriesDatabase } from "../../../database";
 import { StyledParagraphOne, StyledTitle } from "../../../styles/typography";
 import { StyledSection } from "./style";
-import { api } from "../../../services/api";
+import GitHub from "../../../assets/github.svg";
+import Url from "../../../assets/url.svg";
 
 export const Portfolio = () => {
-    const [repos, setRepos] = useState(null);
-
-    const getRepos = async () => {
-        try {
-            const { data } = await api.get("");
-            setRepos(data);
-        } catch (error) {
-            console.log(error);
-        }
-    };
-
-    useEffect(() => {
-        getRepos();
-    }, []);
     return (
         <StyledSection>
             <div className="portfolioHeader">
@@ -32,10 +19,29 @@ export const Portfolio = () => {
                     práticas de programação:
                 </StyledParagraphOne>
                 <ul>
-                    <li>
-                        <img src="" alt="" />
-                        <p className="repoName"></p>
-                    </li>
+                    {repositoriesDatabase.map((repo) => {
+                        return (
+                            <li key={repo.id}>
+                                <img
+                                    className="repoImg"
+                                    src={repo.img}
+                                    alt=""
+                                />
+                                <p className="repoName">{repo.name}</p>
+                                <p className="repoDescription">
+                                    {repo.description}
+                                </p>
+                                <div className="footerItem">
+                                    <a href={repo.url_deploy} target="_blank">
+                                        <img src={Url} alt="" />
+                                    </a>
+                                    <a href={repo.url_repo} target="_blank">
+                                        <img src={GitHub} alt="" />
+                                    </a>
+                                </div>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </StyledSection>

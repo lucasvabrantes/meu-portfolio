@@ -2,18 +2,16 @@ import styled from "styled-components";
 
 export const WelcomeSection = styled.section`
     display: flex;
-    padding: 0px 26px;
-    justify-content: space-between;
-    height: 415px;
+    padding: 40px 30px 0px 50px;
+    height: 430px;
     width: 100%;
     max-width: 900px;
     background: transparent;
-    z-index: 0;
     backdrop-filter: blur(3px);
     border: 1.5px solid var(--grey-300);
     border-top: none;
     border-bottom: none;
-    padding-top: 3rem;
+    margin-top: 99px;
 
     .welcomeTextAndPhoto {
         display: flex;
@@ -48,10 +46,11 @@ export const WelcomeSection = styled.section`
     .brieflyContainer {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         height: 200px;
-        gap: 3rem;
+        gap: 1rem;
         width: 400px;
+        padding-top: 2rem;
 
         p {
             width: 420px;
@@ -63,9 +62,9 @@ export const WelcomeSection = styled.section`
         button {
             background-color: var(--cyan-500);
             color: white;
-            border-radius: 7px;
+            border-radius: 3px;
             width: 100px;
-            height: 50px;
+            height: 40px;
             margin: 0rem 3rem;
             transition: 0.5s;
 
@@ -79,9 +78,9 @@ export const WelcomeSection = styled.section`
 export const ContactsContainer = styled.div`
     display: flex;
     gap: 1rem;
-    padding-top: 1.1rem;
+    padding-top: 1rem;
     justify-content: flex-start;
-    align-content: center;
+    align-content: flex-end;
     align-items: center;
     flex-direction: column;
     height: 400px;
@@ -104,14 +103,13 @@ export const EmailContainer = styled.div`
     align-content: center;
     width: 50px;
     height: 312px;
-    padding-top: 95px;
 
     p {
         transform: rotate(270deg);
         color: var(--cyan-900);
         font-size: 1.3rem;
         letter-spacing: 0.9px;
-        margin: 15px 0px 0px 0px;
+        margin: 108px 0px 0px 0px;
         font-family: "Inconsolata", monospace;
         font-weight: 400;
     }
@@ -121,7 +119,7 @@ export const EmailContainer = styled.div`
     }
 
     .line {
-        height: 55px;
+        height: 60px;
         width: 2px;
         background-color: var(--cyan-500);
     }

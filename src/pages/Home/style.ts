@@ -4,7 +4,7 @@ export const StyledBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("https://dsm01pap006files.storage.live.com/y4mhVnziY1UiOE3PbNXcczX6I03TiTX3XMt-65UQdipXl5OWxQDa4v-r7M23jd4fnhk1DPnqY4vMIVyp2HQyCLXpIH03bLCB2KrkVL-ViosoyH-hr0qTrYcYSc2E85ujZyyjNcsV7w_7FkyEBU4rIbYJCdoqA46pMeL6Ms-FC1MiYszL472h268eurSWpkAlhkwMN1yMg6mbthrEZLRnhSWFrcQc9aVRS4_hj1gUo80CPM?encodeFailures=1&width=445&height=445");
+    background-image: url("https://dsm01pap006files.storage.live.com/y4mvM2NYJhbA4TbrZVHrzIKpPn-DZQLKJEZ0h7f_2tvaWHJMGJPLQ3-TUIR1B1OB_pyhVGNiP-xdtCskTEAD4beuO9W_mDp72OH-TBpmpqC7A_iCF-6ycxmxAdQseXs_YVyDlBPU_996oCuw6p93wZAxwkUSw1fsTpQ4ywy3KwSNkc5uFtQYCGwMnbGJXtVt5uneEJZOtSD7NXtVu9s3AqgcNrJrKgkAYtHVbOuzkkqgRQ?encodeFailures=1&width=305&height=305");
     background-repeat: repeat;
     background-position: center;
     width: 100%;
@@ -18,5 +18,14 @@ export const StyledBody = styled.div`
         flex-direction: column;
         width: 100%;
         max-width: 900px;
+    }
+
+    .scrollHide {
+        background: rgba(34, 184, 207, 0.35);
+    }
+
+    .numberChange {
+        color: var(--orange-100);
+        filter: brightness(0.8);
     }
 `;
