@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 40px 50px;
+    padding: 0px 50px;
     gap: 2rem;
     justify-content: space-between;
-    height: 350px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -15,13 +14,17 @@ export const StyledSection = styled.section`
     border-top: none;
     border-bottom: none;
 
+    @media (max-width: 768px) {
+        padding: 40px 50px;
+    }
+
     .aboutMeHeader {
         width: 100;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     div:last-child {

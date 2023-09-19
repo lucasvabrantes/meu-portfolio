@@ -5,7 +5,6 @@ export const StyledSection = styled.section`
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    height: 1150px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -16,7 +15,7 @@ export const StyledSection = styled.section`
 
     div > p {
         margin-bottom: 3rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     .portfolioHeader {
@@ -25,7 +24,7 @@ export const StyledSection = styled.section`
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     ul {
@@ -34,7 +33,7 @@ export const StyledSection = styled.section`
         flex-direction: row;
         justify-content: space-between;
         gap: 3rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
 
         li {
             display: flex;

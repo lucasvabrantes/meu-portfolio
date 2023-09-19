@@ -12,14 +12,22 @@ export const WelcomeSection = styled.section`
     border-bottom: none;
     margin-top: 99px;
     position: relative;
+
     @media (max-width: 768px) {
         flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .welcomeTextAndPhoto {
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            align-items: center;
+        }
 
         div:first-child {
             display: flex;
@@ -60,7 +68,7 @@ export const WelcomeSection = styled.section`
         height: 200px;
         gap: 1rem;
         width: 100%;
-        max-width: 40vw;
+        max-width: 400px;
         padding-top: 2rem;
         position: absolute;
         top: 140px;
@@ -68,25 +76,48 @@ export const WelcomeSection = styled.section`
         @media (max-width: 768px) {
             top: 0px;
             position: relative;
+            max-width: 300px;
+            justify-content: center;
         }
         p {
             max-width: 420px;
             margin: 0rem 1.5rem;
             font-size: 1rem;
             font-weight: 100;
+
+            @media (max-width: 768px) {
+                text-align: justify;
+            }
         }
 
-        button {
-            background-color: var(--cyan-500);
-            color: white;
+        .contactMe {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: var(--cyan-700);
             border-radius: 3px;
-            width: 100px;
+            width: 120px;
             height: 40px;
             margin: 0rem 1.5rem;
             transition: 0.5s;
 
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            @media (max-width: 768px) {
+                align-self: center;
+            }
+
             &:hover {
-                background-color: var(--orange-100);
+                /* background-color: var(--orange-100); */
+                filter: brightness(1.2);
             }
         }
     }
@@ -94,7 +125,7 @@ export const WelcomeSection = styled.section`
 
 export const ContactsContainer = styled.div`
     display: flex;
-    gap: 1rem;
+    gap: 1.1rem;
     padding-top: 1rem;
     align-items: center;
     flex-direction: column;
@@ -103,14 +134,12 @@ export const ContactsContainer = styled.div`
     @media (max-width: 768px) {
         height: 100px;
         flex-direction: row;
-        padding-right: 23px;
-        padding-left: 35px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     div {
         height: 85px;
-        width: 2px;
+        width: 3px;
         background-color: var(--cyan-500);
         align-self: center;
     }
@@ -160,20 +189,18 @@ export const StyledLink = styled.a`
     }
 
     #git:hover {
-        background: #7950f2;
-        filter: brightness(1.1);
-        border-radius: 255px;
+        filter: brightness(1.2);
+        transform: scale(1.1);
     }
 
     #linkedin:hover {
-        background: #0b65c2;
-        filter: brightness(1.1);
-        border-radius: 6px;
+        filter: brightness(1.2);
+        transform: scale(1.1);
     }
 
     #telegram:hover {
-        background: #2aa0d9;
-        filter: brightness(1.1);
+        filter: brightness(1.2);
+        transform: scale(1.1);
     }
 `;
 
@@ -193,6 +220,14 @@ export const StyledWelcomeText = styled.h1`
         font-size: 1.8rem;
     }
 
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 1.6rem;
+    }
+
     p {
         font-size: 2.3rem;
         font-family: var(--font-family);
@@ -202,6 +237,10 @@ export const StyledWelcomeText = styled.h1`
 
         @media (max-width: 867px) {
             font-size: 1.8rem;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
         }
     }
 `;

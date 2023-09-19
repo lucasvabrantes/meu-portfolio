@@ -3,7 +3,7 @@ import { StyledSection } from "./style";
 
 export const Contact = () => {
     return (
-        <StyledSection>
+        <StyledSection id="contact">
             <div className="contactHeader">
                 <StyledTitle textColor="cyan">04.</StyledTitle>
                 <StyledTitle textColor="grey">Contato</StyledTitle>

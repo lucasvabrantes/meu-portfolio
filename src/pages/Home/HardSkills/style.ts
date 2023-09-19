@@ -5,7 +5,6 @@ export const StyledSection = styled.section`
     flex-direction: column;
     padding: 40px 50px;
     gap: 2rem;
-    height: 400px;
     width: 100%;
     max-width: 900px;
     background: transparent;
@@ -20,7 +19,7 @@ export const StyledSection = styled.section`
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     ul {
@@ -28,7 +27,7 @@ export const StyledSection = styled.section`
         flex-direction: row;
         flex-wrap: wrap;
         gap: 3rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
         justify-content: flex-start;
 
         li {

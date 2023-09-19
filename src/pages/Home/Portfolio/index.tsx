@@ -6,7 +6,7 @@ import Url from "../../../assets/url.svg";
 
 export const Portfolio = () => {
     return (
-        <StyledSection>
+        <StyledSection id="portfolio">
             <div className="portfolioHeader">
                 <StyledTitle textColor="cyan">03.</StyledTitle>
                 <StyledTitle textColor="grey">Portfólio</StyledTitle>

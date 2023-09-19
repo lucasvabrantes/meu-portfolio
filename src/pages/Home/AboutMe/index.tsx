@@ -4,7 +4,7 @@ import { StyledSection } from "./style";
 
 export const AboutMe = () => {
     return (
-        <StyledSection>
+        <StyledSection id="about">
             <div className="aboutMeHeader">
                 <StyledTitle textColor="cyan">01.</StyledTitle>
                 <StyledTitle textColor="grey">Sobre mim</StyledTitle>

@@ -5,10 +5,11 @@ import {
     StyledWelcomeText,
     WelcomeSection,
 } from "./style";
-import git from "../../../assets/github.png";
-import linkedin from "../../../assets/linkedin.png";
-import telegram from "../../../assets/telegramIcon.png";
+import git from "../../../assets/git.svg";
+import linkedin from "../../../assets/linkedin.svg";
+import telegram from "../../../assets/telegram.svg";
 import Me from "../../../assets/me.png";
+import Whatsapp from "../../../assets/whatsapp.svg";
 
 export const WelcomeContainer = () => {
     return (
@@ -57,7 +58,10 @@ export const WelcomeContainer = () => {
                         Eu sou um desenvolvedor Front End formado pela Kenzie
                         Academy Brasil. Atualmente estudando backend com Node.js
                     </p>
-                    <button className="contactMe">Contate me</button>
+                    <button className="contactMe">
+                        <img src={Whatsapp} alt="Ícone Whatsapp" />
+                        <a href="https://wa.me/5596991111911">Whatsapp</a>
+                    </button>
                 </div>
             </div>
         </WelcomeSection>

@@ -24,6 +24,6 @@ export const StyledTitle = styled.h2<ITitleProps>`
 export const StyledParagraphOne = styled.p`
     font-size: 1rem;
     color: var(--grey-300);
-    margin-left: 3rem;
+    margin-left: 1rem;
     text-align: justify;
 `;

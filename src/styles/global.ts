@@ -5,8 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     *{
         box-sizing: border-box;
         padding: 0;
-        margin: 0;
-        font-family:var(--font-family); 
+        margin: 0 auto;
+        font-family:var(--font-family);
+    }
+
+    html{
+        scroll-behavior: smooth;
     }
 
     ul, ol, li{

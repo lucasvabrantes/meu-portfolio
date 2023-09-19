@@ -12,7 +12,7 @@ import EX from "../../../assets/skillsIcons/express.svg";
 
 export const HardSkills = () => {
     return (
-        <StyledSection>
+        <StyledSection id="skills">
             <div className="hardSkillsHeader">
                 <StyledTitle textColor="cyan">02.</StyledTitle>
                 <StyledTitle textColor="grey">Skills</StyledTitle>

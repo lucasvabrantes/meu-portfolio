@@ -20,7 +20,7 @@ export const StyledSection = styled.section`
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     .contact {

@@ -2,7 +2,7 @@ import { Header } from "../../components/Header";
 import { WelcomeContainer } from "./WelcomeContainer";
 import { StyledBody } from "./style";
 import { AboutMe } from "./AboutMe/index";
-import { Footer } from "./Footer";
+import { Footer } from "../../components/Footer";
 import { Portfolio } from "./Portfolio";
 import { HardSkills } from "./HardSkills";
 import { useState } from "react";
@@ -22,7 +22,7 @@ export const Home = () => {
 
     return (
         <StyledBody>
-            <div className="grid">
+            <div>
                 <Header colorChange={colorChange} />
                 <WelcomeContainer />
                 <AboutMe />
